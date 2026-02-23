@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { waLink } from '../data'
+import { Phone } from 'lucide-react'
 
 const NAV_LINKS = [
   { label: 'Nosotros', id: 'nosotros' },
@@ -80,7 +81,7 @@ export default function Navbar() {
             rel="noopener noreferrer"
             className="text-primary font-semibold"
           >
-            📱 Consultar por WhatsApp
+            <Phone className="inline mr-2" size={16} /> Consultar por WhatsApp
           </a>
         </div>
       )}
